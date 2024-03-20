@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
      { text: 'Home', link: '/' },
-     { text: 'Examples', link: '/markdown-examples' },
+    //  { text: 'Examples', link: '/markdown-examples' },
      { text: 'Database', link: '/docs/database/' }
     ],
     outline: { label: 'Navigator'},
@@ -34,7 +34,7 @@ export default defineConfig({
       text: 'Oracle',
       items: [
         {
-          text: 'Isolation', link: './Isolation'
+          text: 'Isolation', link: '/docs/database/oracle/Isolation'
         }
       ]
     },
@@ -42,7 +42,7 @@ export default defineConfig({
       text: 'PostgreSql',
       items: [
         {
-          text: 'PL/Sql', link: '../postgresql/PLSql_block'
+          text: 'PL/Sql', link: '/docs/database/postgresql/PLSql_block'
         }
       ]
     }
