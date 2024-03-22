@@ -1,19 +1,27 @@
 import { defineConfig } from 'vitepress'
 
+var doc = 'Docs';
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Orca in The Sea",
   description: "Way to Science Universe",
+  base: '/',
+  srcDir: '../docs/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
      { text: 'Home', link: '/' },
     //  { text: 'Examples', link: '/markdown-examples' },
-     { text: 'Database', link: '/docs/database/' }
+     { text: doc, link: '/database/' }
     ],
     outline: { label: 'Navigator'},
 
     sidebar: {
+      '/' :[
+        { text: 'database', link: '/docs/database/'
+        }
+      ],
       '.': [
       {
         text: 'Examples',
